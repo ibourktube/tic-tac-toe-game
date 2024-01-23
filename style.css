@@ -1,0 +1,219 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #31303090; */
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+  position: relative;
+}
+
+.container .square{
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  background-color: black;
+  color:white;
+  font-size: 120px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.container .square.win{
+  background-color: green;
+  animation: win 1s 3 linear;
+}
+
+@keyframes win {
+  0%{
+    font-weight: 300px;
+  }
+  100%{
+    font-weight: 600;
+  }
+}
+
+.start-menu{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #12121290;
+}
+
+.start-menu .menu{
+  width:500px;
+  height:500px;
+  border: 5px solid white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column ;
+}
+
+.start-menu .menu h2{
+  color:white;
+  margin-bottom: 30px;
+}
+
+.start-menu .menu button{
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  color:white;
+  border-color:white;
+  box-shadow: 0 0 10px ;
+}
+
+.start-menu .menu button:hover,.start-menu .menu button.click{
+  background-color: #eee;
+  color:#121;
+  border-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.container .square.win{
+  color: green;
+  animation: win 1s 3 linear;
+}
+
+@keyframes win{
+  0%{
+    font-weight: 500 ;
+  }
+  100%{
+    font-weight: 700;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.start-menu{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: #31303090;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start-menu .menu{
+  width: 500px;
+  height:  500px;
+  border: 5px solid white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start-menu .menu button{
+  padding: 9px 20px;
+  margin: 10px 0;
+  border: 1px solid white;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  transition: .5s linear;
+}
+.start-menu .menu button:hover,.start-menu .menu button.active{
+  background-color: black;
+  color: white;
+  border-color: #1212;
+}
+
+
+.start-menu .menu h2{
+  color: white;
+  margin-bottom: 30px;
+}
+ */
+
+
+
+
